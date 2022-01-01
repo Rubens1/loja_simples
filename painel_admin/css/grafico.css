@@ -1,0 +1,73 @@
+.grafico-contant{
+	width: 100%;
+	display: flex;
+	margin:0;
+	padding: 10px;
+
+}
+.grafico-contant .grafico{
+ 	display: flex;
+	width: 100%;
+	justify-content:center;
+ 	flex-direction: row;
+ 	
+	
+}
+.grafico .grafico-vendas,
+.grafico .grafico-publicidade,
+.grafico .grafico-funcionario{
+	border-radius: 7px;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	max-height: 300px;
+	max-width: 490px;
+	width: 100%;
+	height: 100%;
+	margin: 0 5px;
+	padding: 2px 30px;
+}
+.g-titulo{
+    font-size: 20px;
+    text-align:center;
+}
+.detalhe-grafico{
+	text-align: center;
+	width: 100%;
+}
+.detalhe-grafico h2,
+.detalhe-grafico h2{
+	text-align: center;
+	font-size: 18px;
+	border-bottom: 1px solid #ccc;
+}
+.grafico-p-contant{
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	height: 500px;
+}
+.grafico-p{
+	display: flex;
+	width: 100%;
+}
+.grafico-p .grafico-pagamentos{
+	display:flex;
+	border-radius: 7px;
+	background-color: white;
+	width: 100%;
+}
+.grafico-p .grafico-pagamentos canvas{
+	height:430px !important;
+}
+.detalhe-grafico canvas{
+	max-height: 200px;
+	height: 100%;
+}
+
+@media screen and (max-width: 768px){
+
+    .grafico-contant .grafico{
+        display:none;
+    }
+}

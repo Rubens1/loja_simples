@@ -1,0 +1,38 @@
+.flex-dashboard header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width:100% !important;
+    background-image: linear-gradient(110deg, #317b81, #005A7A);
+    padding: 10px 30px;
+}
+
+.flex-dashboard header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.flex-dashboard{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.flex-dashboard header i{
+    color: #fff;
+    
+}
+.flex-dashboard .fa-bars{
+    font-size: 22px;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px){
+    .flex-dashboard header a{
+        display: none;
+    }
+
+    .flex-dashboard header{
+        justify-content: flex-end;
+    }
+}

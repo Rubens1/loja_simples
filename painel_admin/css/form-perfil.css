@@ -1,0 +1,113 @@
+.perfil-parent{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 900px;
+    margin-bottom: 10px;
+    padding: 30px 20px;
+    width: 100%;
+    background-color: white;
+   
+}
+.perfil-img{
+    width: 40%;
+}
+.perfil-form{
+    padding-left: 20px;
+    width: 60%;
+}
+.perfil-form label,input{
+    font-size: 15px;
+}
+.perfil-form .custom-file{
+    margin-top: 1rem;
+}
+.perfil-form button{
+    margin-top: 20px;
+}
+.img-colaborado{
+    height: 420px;
+    width: 100%;
+    box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+
+}
+.img-colaborado img{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid rgb(142, 125, 241, 0.4);
+    border-radius: 20px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.400rem 0.90rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.custom-control-label::before,
+.custom-file-label,
+.custom-select {
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.custom-file {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  margin-bottom: 2px;
+}
+.editar-info-colaborado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+
+.editar-info-colaborado .senha-colaborado{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 780px){
+    /*.perfil-parent{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }*/
+    .perfil{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .img-colaborado{
+        width: 150px;
+        height: 150px;
+        margin: 5px 30px;
+    }
+    
+}

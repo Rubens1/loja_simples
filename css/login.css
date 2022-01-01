@@ -1,0 +1,226 @@
+.container{
+	width: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+.container-login{
+	width: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+.verification{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	width: 100%;
+	padding-top: 100px;
+	height: 420px;
+}
+.verification .text{
+	width: 100%;
+	text-align: center;
+}
+
+.verification .text a{
+	color: #099aad;
+	text-decoration: none;
+}
+.verification .text a:hover{
+	color: #37c5d8;
+}
+.logar{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+.logar form{
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+}
+.logar form .senha{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+.logar form .senha a{
+	color: #099aad;
+	text-decoration: none;
+}
+.logar form .senha a:hover{
+	color: #37c5d8;
+}
+.logar form .senha-empresa{
+	width: 100%;
+}
+.verification form .form-login{
+	border: 0;
+	border-bottom: 1px solid #ccc;
+}
+.verification form input[type=email],
+.verification form input[type=password]{
+	padding: 10px;
+	width: 100%;
+}
+.verification form label{
+	width: 100%;
+	
+}
+.verification form .btn-login{
+	margin-top: 10px;
+	border:0;
+	padding: 9px;
+	border-radius: 4px;
+	background: #6200ea;
+	color: white;
+	cursor: pointer;
+}
+.verification form .btn-login:hover{
+	background: #6f10f3;
+}
+
+.verification-cadastro{
+	background-color: #fff;
+	width: 100%;
+	padding: 30px;
+	margin: 30px 9px;
+}
+
+.cadastrar form{
+	text-align: center;
+	padding: 10px;
+	width: 100%;
+}
+.cadastrar form label{
+	text-align: left;
+}
+.verification-cadastro form .form-cadastro{
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid rgb(151, 149, 149);
+}
+.verification-cadastro form label{
+	padding-top: 10px;
+	width: 100%;
+}
+.verification-cadastro form input{
+	width: 100%;
+}
+.verification-cadastro form select{
+	width: 100%;
+}
+.verification-cadastro form .btn-cadastro{
+	margin-top: 10px;
+	width: 50%;
+	border:0;
+	padding: 9px;
+	border-radius: 4px;
+	background: #30DF8D ;
+	color: white;
+	cursor: pointer;
+}
+.verification-cadastro form  .btn-cadastro:hover{
+	background: #6fecb2;
+}
+.verification-cadastro h3{
+	margin-top: 10px;
+}
+.cadastro{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+.cadastro-cliente,
+.cadastro-endereco{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.titulo-cadastro{
+	display: flex;
+	width: 100%;
+	margin: 9px; 
+}
+
+.info-cadastro{
+	margin: 3px 10px;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 1080px){
+	.logar form .senha{
+	margin-top: 8px;
+	margin-left: 70%;
+	}
+	.logar form{
+	width: 100%;
+	}
+
+	.cadastrar form .senha{
+		margin-top: 8px;
+		margin-left: 70%;
+		}
+		.cadastrar form{
+		width: 100%;
+		}
+		.btn-cadastro-loja{
+			width: 100%;
+		}
+}
+@media screen and (max-width: 780px){
+	.logar form .senha{
+		margin-top: 8px;
+		margin-left: 4px
+		}
+
+		.verification{
+			width: 100%;
+			margin: 50px 0;
+			text-align: center;
+		}
+	
+		.cadastrar form .senha{
+			margin-top: 8px;
+			margin-left: 50%;
+		}
+	
+		.cadastrar form{
+			width: 100%;
+		}
+		.btn-cadastro{
+			width: 100%;
+			text-align: center;
+		}
+		.cadastrar .info-cadastro{
+			width: 100%;
+		}
+		.cadastro-left{
+			width: 100%;
+		}
+		.cadastro-right{
+			width: 100%;
+		}
+		.btn-cadastro-loja{
+			width: 100%;
+		}
+
+.logar form{
+	width: 100%;
+	}
+}

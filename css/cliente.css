@@ -1,0 +1,157 @@
+
+.perfil-container{
+	padding:40px 0;
+	text-align: center;
+}
+
+.info-cliente{
+	width: 33.3%;
+	display: inline-block;
+}
+.mensagem{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mensagem .mensagem-viws{
+	width: 50%;
+}
+.perfil-container input[type=text]{
+	margin:8px 0;
+	width: 100%;
+	height: 40px;
+	border:1px solid #ccc;
+	padding-left: 8px;
+	font-size: 16px;
+	max-width: 800px;
+	color: #444;
+}
+
+
+.perfil-container input[type=email]{
+	margin:8px 0;
+	width: 100%;
+	height: 40px;
+	border:1px solid #ccc;
+	padding-left: 8px;
+	font-size: 16px;
+	max-width: 800px;
+	color: #444;
+}
+
+
+.perfil-container input[type=submit]{
+	background: #6200ea;
+	border:0;
+	width: 28%;
+	height: 40px;
+	color: white;
+	cursor: pointer;
+}
+
+.perfil-container input[type=submit]:hover{
+	background: #7200ea;
+	cursor: pointer;
+}
+
+.perfil-container label{
+	width: 100%;
+	text-align: left;
+	margin: 0;
+}
+.enderecos{
+	padding: 10px;
+	width: 100%;
+}
+.endereco_container{
+	display: flex;
+	flex-direction: column;
+}
+.endereco_container .link_endereco{
+	display: flex;
+	justify-content: end;
+	width: 84%;
+}
+.endereco_container .todos_enderecos{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	margin: 10px 0;
+}
+.todos_enderecos .endereco_cliente{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 15px;
+	background-color: #ccc;
+	border-radius: 10px;
+	max-width: 300px;
+	width: 100%;
+	padding: 8px;
+	margin: 10px;
+}
+.todos_enderecos .endereco_cliente p{
+	text-align: start;
+	margin-bottom: 3px;
+}
+.botoes_endereco{
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+}
+.botoes_endereco a{
+	text-decoration: none;
+}
+.botoes_endereco .editar_endereco{
+	background-color: rgb(0, 206, 209);
+	padding: 10px;
+	border-radius: 5px;
+	margin: 0 3px;
+	color: #fff;
+}
+.botoes_endereco .editar_endereco:hover{
+	transition: .5s;
+	background-color: rgb(38, 228, 231);
+}
+.botoes_endereco .apagar_endereco{
+	background-color: rgb(209, 0, 0);
+	padding: 10px;
+	border-radius: 5px;
+	margin: 0 3px;
+	color: #fff;
+}
+.botoes_endereco .apagar_endereco:hover{
+	transition: .5s;
+	background-color: rgb(228, 33, 33);
+}
+.endereco_container_frete{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.endereco_container_frete .todos_enderecos_frete{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	margin: 10px 0;
+}
+.todos_enderecos_frete .endereco_cliente_frete{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 12px;
+	background-color: #ccc;
+	border-radius: 10px;
+	max-width: 100px;
+	width: 100%;
+	padding: 8px;
+	margin: 10px;
+}
+
+.todos_enderecos_frete label{
+  cursor:pointer
+}

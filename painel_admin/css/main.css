@@ -1,0 +1,207 @@
+.pointer{ cursor:pointer; }
+main{
+    display: block;
+    background-color: rgba(241,241,241,0.7);
+    width: calc(100% - 230px);
+}
+
+main .main-content{
+	padding: 30px;
+	width: 100%;
+	height: calc(100% - 50px);
+	overflow-y: auto;
+}
+
+main .main-content::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	 background-color: #4c989f;
+}
+
+main .main-content::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #4c989f;
+}
+
+main .main-content::-webkit-scrollbar-thumb
+{
+	background-color:  #09575e;
+}
+
+.main-content .panel{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border: 1px solid #ccc;
+	margin: 10px 0;
+	
+}
+
+.dashboard-content{
+	padding: 10px 0;
+}
+.dashboard-flex-paret{
+	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+.dashboard-box{
+	width: 100%;
+	max-width: 450px;
+	color: white;
+	padding-top: 10%;
+	position: relative;
+	margin: 0 5px;
+	padding-bottom: 10px;
+}
+.dashboard-box-wrapper{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.dashboard-box:hover{
+	transition: 0.4s;
+	box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+	transform: scale(1.05);
+}
+.box-icon{
+	width: 55px;
+	height: 55px;
+	border-radius: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.box-icon i{
+	font-size: 33px;
+}
+.value{
+	font-size: 22px;
+}
+.type{
+	font-size: 14px;
+}
+.box-azul{
+	background-image: linear-gradient(110deg, #39c7fa, #079ed5);
+}
+.box-rosa{
+	background-image: linear-gradient(110deg, #e27ae2,#b849b8);
+}
+.box-amarelo{
+	background-image: linear-gradient(110deg, #F5FA1D,#D6B11A);
+}
+.box-verde{
+	background-image: linear-gradient(110deg, #00C7BD,#257A68);
+}
+.box-roxo{
+	background-image: linear-gradient(110deg, #8BA1E6,#66277A);
+}
+.dashboard-controle{
+	padding: 10px 0;
+}
+.dashboard-controle h1{
+	color: #aaa;
+}
+.dashboard-detalhe{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.receita{
+	border-radius: 7px;
+	width: 100%;
+	color: black;
+	background-color: white;
+	padding-top: 10%;
+	position: relative;
+	margin: 0 10px;
+	padding-bottom: 10px;
+}
+.receita h3{
+	font-size: 15px;
+}
+.receita h2{
+	font-size: 18px;
+}
+.receita-box{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.titulo-vendas{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	border-right: 1px solid blue;
+}
+.numero-vendas{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+@media screen and (max-width: 1024px){
+	.dashboard-box{
+		width: 50%;
+		padding-top: 20%;
+		position: relative;
+		margin: 10px 0;
+	}
+	.dashboard-box-wrapper{
+		position: absolute;
+	}
+	.dashboard-flex-paret{
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 780px){
+	.dashboard-box{
+		width: 100%;
+		height: 130px;
+		position: relative;
+		padding-top: 12%;
+		margin: 10px;
+	}
+	.dashboard-box-wrapper{
+		position: absolute;
+	}
+	.dashboard-flex-paret{
+		flex-wrap: wrap;
+	}
+	.box-icon{
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 768px){
+	main{
+		display: block;
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+		position: absolute;
+	}
+}
